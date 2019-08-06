@@ -2,6 +2,8 @@
 body{
     font-family: 'Lato', sans-serif;
 }
+
+/* ----------------------- The session 1 css--------------------------------------*/
 .session1
 {
     background-image: url("/home/developer/Desktop/dp/Design Task1/assets/images/images/coffee4.jpg");
@@ -12,29 +14,29 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
-  position: absolute;
+  
   top: 0px;
   left: 0px;
   width: 100%;
   height: 65%;
-  z-index:99;
-  opacity: 0.44;
+  
 }
-
+.session1 .slider{
+    background-color: #5f5252;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.7;
+}
 
 .navbar img
 {
     width: 150px !important;
     float: right;
 }
-.navbar-nav 
-{
-    float: right !important;
-    margin-left: 304px !important;
-    padding-left: 200px !important;
-}
 
-.navbar-nav a {
+
+.menu a {
     float: right !important;
     display: block;
     color: #c9ad85 !important;
@@ -45,8 +47,11 @@ body{
     /* background-color:white; */
     
 }
+.collapse{
+    float:right;
+}
 
-.navbar-nav a:hover {
+.menu a:hover {
     background-color: white;
     border-bottom: solid black 2px;
     color: black;
@@ -56,10 +61,10 @@ body{
     font-size: 20px;
 }
 
-@media screen and (min-width: 730px)
+@media(min-width: 730px)
 {.navbar img
     {
-        width: 90px !important;
+     
         float: left !important;
     }
     .navbar-nav 
@@ -71,10 +76,423 @@ body{
 
 
 
+/*----------------------------------- slide show css----------------------- */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #c9ad85;
+}
+ .fade {
+    opacity: 1 !important; 
+    /* -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear; */
+     /* transition: opacity .15s linear; */
+} 
+
+.button{
+    text-align: center;
+    margin-top: 4%;
+}
+.content
+{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 30px;
+    color: #c9ad84;
+}
+.text_button
+{
+    text-align: center;
+}
+.simble
+{
+    text-align: center;
+    margin-top: 15%;
+}
+.button {
+    background-color:#c9ad85;
+    border: none;
+    color: rgb(24, 17, 17);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*- --------------------------------------- Features css -------------------------*/
+
+.session3
+{
+    background-color: aliceblue;
+    padding-bottom: 30px;
+}
+.features h2 {
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    color: #c9ad85;
+}
 
 
 
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 0px;
+}
 
+.card p {
+    font-size: 11px;
+    margin-left: -12px;
+    float: left
+}
+
+.card img {
+    width: 100%;
+    height: 305px;
+}
+
+h3 {
+    font: 8px;
+    text-align: left;
+
+}
+
+.col-sm-6 {
+    padding: 0% !important;
+}
+
+.card-body {
+    width: 80%;
+
+    padding-left: 16%;
+    padding-top: 10%;
+    color: #c9ad85;
+}
+
+.col-sm-10 {
+    padding-left: 0px;
+    text-align: left;
+    color: black;
+    font-size: 8px;
+}
+
+.glyphicon {
+    width: 100%;
+    height: 20px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+
+@media only screen and (max-width: 1198px) {
+    .card img {
+        width: 100%;
+        height: 296px !important;
+    }
+}
+
+@media only screen and (max-width:914px) {
+    .card img {
+        width: 100%;
+        height: 420px !important;
+    }
+
+    .card p {
+        font-size: 11px;
+        margin-left: -2px;
+        float: left;
+    }
+
+}
+
+@media only screen and (max-width: 982px) {
+    .card p {
+        font-size: 11px;
+        margin-left: 13px;
+        float: left;
+    }
+
+    .card img {
+        /* width: 100%; */
+        height: 266px !important;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    .glyphicon {
+        /* width: 100%; */
+        /* height: 20px; */
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .card-body {
+        width: 80%;
+        padding-left: 3%;
+        padding-top: 3%;
+        color: #c9ad85;
+    }
+
+    .card p {
+        font-size: 11px;
+        margin-left: 35px;
+        /* float: left; */
+    }
+}
+
+/* -------------------------section four-------------------- */
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.content {
+    background-color: #c9ad85;
+    padding: 15px;
+}
+
+.title {
+    padding: 25px;
+}
+
+.title1 {
+    padding: 25px;
+}
+
+.title img {
+    width: 10%;
+    color: #c9ad85 !important;
+}
+
+.title1 img {
+    width: 10%;
+}
+
+.title p {
+    float: right;
+    color: #c9ad85;
+    margin-right: 56%;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.title1 p {
+    float: right;
+    color: #c9ad85;
+    margin-right: 48%;
+    padding-top: 6px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1182px) {
+    .title1 p {
+        float: right;
+        color: #c9ad85;
+        margin-right: 45%;
+        padding-top: 6px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 972px) {
+    .title1 p {
+        float: right;
+        color: #c9ad85;
+        margin-right: 21%;
+        padding-top: 6px;
+        font-size: 15px;
+    }
+
+    .title p {
+        float: right;
+        color: #c9ad85;
+        margin-right: 39%;
+        padding-top: 5px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .title1 p {
+        float: right;
+        color: #c9ad85;
+        margin-right: 21%;
+        padding-top: 0px;
+        font-size: 15px;
+        padding-bottom: -16px;
+        margin-bottom: -16px;
+        margin-top: 0px;
+    }
+
+    .title p {
+        float: right;
+        color: #c9ad85;
+        margin-right: 37%;
+        padding-top: -17px;
+        font-size: 15px;
+    }
+}
+    /* 
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 49%;
+        float: left;
+        padding: 17px;
+    } */
+
+    @media only screen and (max-width: 750px) {
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 100%;
+            margin-bottom: 25px;
+            padding: 17px;
+        }
+    }
+
+    @media only screen and (min-width: 590px) {
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 100%;
+
+            padding: 17px;
+        }
+    }
+
+    @media only screen and (min-width: 360px) {
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 17px;
+        }
+
+        .title1 p {
+            float: right;
+            color: #c9ad85;
+            margin-right: 45%;
+            padding-top: 0px;
+            font-size: 15px;
+            padding-bottom: -16px;
+            margin-bottom: -16px;
+            margin-top: 0px;
+        }
+
+        .title p {
+            float: right;
+            color: #c9ad85;
+            margin-right: 53%;
+            padding-top: -17px;
+            font-size: 15px;
+        }
+    }
 
 
 
