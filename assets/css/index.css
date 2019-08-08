@@ -6,21 +6,11 @@ body{
 /* ----------------------- The session 1 css--------------------------------------*/
 .session1
 {
-    background-image: url("/home/developer/Desktop/dp/Design Task1/assets/images/images/coffee4.jpg");
-    height: 100%;
+    background-image: linear-gradient(180deg, rgba(70, 67, 67, 0.68), rgba(35, 35, 49, 0.79)), url(../images/images/coffee4.jpg);
+    z-index: -5;
+}  
+  
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: "";
-  
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 65%;
-  
-}
 .session1 .slider{
     background-color: #505050;;
     width: 100%;
@@ -198,6 +188,7 @@ body{
     font-size: 30px;
     color: #c9ad84;
     font-weight: inherit;
+    padding: 10px;
 }
 .text_button
 {
@@ -212,7 +203,7 @@ body{
     background-color:#c9ad85;
     border: none;
     color: rgb(24, 17, 17);
-    padding: 15px 32px;
+    padding: 11px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -312,76 +303,85 @@ body{
     padding: 50px;
 }
 
-.progressbar li{
-    list-style-type: none;
-    float: left;
-    width: 25%;
+.circle1{
     position: relative;
-    text-align: center;
-    color:white;
-    font-size: 20px;
-    
-}
-.progressbar li::before{
- content: url("/home/developer/Desktop/dp/Design Task1/assets/icons/cupcake.svg");
+    height: 100px;
     width: 100px;
-    height:100px;
-    border: 2px solid #5f5252;
-    display: block;
-    text-align: center;
-    margin:0 auto 10px auto;
+    border: 1px solid bisque;
     border-radius: 50%;
-    background-color: white;
-
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 54px;
+    float: left;
 }
-.progressbar li::after{
-    content: "";
+.circle2{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border: 1px solid bisque;
+    border-radius: 50%;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 54px;
+    float: left;
+}
+.circle3{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border: 1px solid bisque;
+    border-radius: 50%;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 54px;
+    float: left;
+}
+.circle4{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border: 1px solid bisque;
+    border-radius: 50%;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 54px;
+    float: left;
+}
+.material-icons{
+    font-size: 60px !important;
+    line-height: 0 !important;
+    margin-top: 52% !important;
+}
+.circle1 p{
+    font-size: 20px;
+}
+.circle2 p{
+    font-size: 20px;
+}
+.circle3 p{
+    font-size: 20px;
+}
+.circle4 p{
+    font-size: 20px;
+}
+.col-sm-2 .material-icons{
+    font-size: 10px !important;
+    color: #c9ad85;
+}
+hr {
+    border-top: 3px solid rgba(167, 140, 45, 0.89) !important;
+    width: 66%;
+    margin-top: 26% !important;
+    margin-left: 49% !important;
+}
+.line {
     position: absolute;
-    width: 100%;
-    height: 5px;
-    background-color:blue;
-    top:50px;
-    left: -50%;
-    z-index: -2;
+    border-bottom: 5px solid #ACCF5B;
+    width: 200px;
+    left: 71px;
+    top: 39px;
+    z-index: 0;
 }
-.progressbar li:first-child::after{
-    content: none;
-}
-/* "/home/developer/Desktop/dp/Design Task1/assets/icons/cupcake.svg" */
-
-
-
-/* -----------------section-2 responsive ------------*/
-
-@media only screen and (max-width:545px){
-    .progressbar li::before {
-        /* content: url(/home/developer/Desktop/dp/Design Task1/assets/icons/cupcake.svg); */
-        width: 46px;
-        height: 48px;
-        border: -1px solid #5f5252;
-        display: block;
-        text-align: center;
-        margin: 0 auto 10px auto;
-        border-radius: 50%;
-        background-color: white;
-    }
-    ul {
-        margin-top: 0;
-        margin-bottom: 1rem;
-        margin-right: 25px;
-    }
-    .progressbar_text
-    {
-        font-size: small;
-    }
-}
-
-
-
-
-
-
-
 
 /*- --------------------------------------- section 3 -------------------------*/
 
