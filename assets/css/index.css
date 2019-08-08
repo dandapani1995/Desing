@@ -27,6 +27,7 @@ body{
     height: 100%;
     z-index: 0;
     opacity: 0.7;
+    padding: 30px; 
 }
 
 .navbar img
@@ -35,7 +36,9 @@ body{
     float: right;
 }
 
-
+.menu{
+    margin-left: auto;
+}
 .menu a {
     float: right !important;
     display: block;
@@ -52,9 +55,9 @@ body{
 }
 
 .menu a:hover {
-    background-color: white;
-    border-bottom: solid black 2px;
-    color: black;
+    background-color:none;
+    border-bottom: solid rgb(209, 166, 110) 2px;
+    color: rgba(211, 156, 7, 0.699);
 }
 .mySlides h1{
     text-align: center;
@@ -71,8 +74,31 @@ body{
     {
         float: right !important;
     }
-    
+       .navbar img {
+        width: 150px !important;
+         float: right; 
+         margin-right: auto;
+    }    
 }
+    /* .navbar img {
+        width: 150px !important;
+        /* float: right; */
+        /* margin-right: auto;
+    } */
+
+
+/* .menu a {
+    /* float: right !important; */
+    /* display: block;
+    color: #c9ad85 !important; */
+    /* text-align: center; */
+    /* padding: 14px 16px; */
+    /* text-decoration: none; */
+    /* font-size: 17px; */
+    /* background-color: white; */
+    /* margin-right: -23px; */
+    /* margin-left: 79%;
+} */ 
 
 
 
@@ -205,7 +231,68 @@ body{
 }
 
 
-/*- --------------------------------------- Features css -------------------------*/
+/* ----------------------SECTION 2 ----------------- */
+.section_2{
+    background-color: #4d4b4a;
+  padding: 30px; 
+
+}
+.section2_titele p{
+    font-size: 30px;
+    color: #c9ad85;
+    text-align: center;
+}
+
+.progressbar li{
+    list-style-type: none;
+    float: left;
+    width: 25%;
+    position: relative;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    
+}
+.progressbar li::before{
+ content: url("/home/developer/Desktop/dp/Design Task1/assets/icons/cupcake.svg");
+    width: 100px;
+    height:100px;
+    border: 2px solid #5f5252;
+    display: block;
+    text-align: center;
+    margin:0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.progressbar li::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color:blue;
+    top:50px;
+    left: -50%;
+    z-index: -2;
+}
+.progressbar li:first-child::after{
+    content: none;
+}
+/* "/home/developer/Desktop/dp/Design Task1/assets/icons/cupcake.svg" */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*- --------------------------------------- section 3 -------------------------*/
 
 .session3
 {
@@ -214,18 +301,20 @@ body{
 }
 .features h2 {
     text-align: center;
-    padding: 30px;
+    padding:54px;
     font-size: 30px;
     color: #c9ad85;
 }
 
 
-
+.cards {
+    padding: 35px;
+}
 .card {
     width: 100%;
     height: 100%;
     background-color: white;
-    padding: 0px;
+    padding: 40px
 }
 
 .card p {
@@ -236,7 +325,7 @@ body{
 
 .card img {
     width: 100%;
-    height: 305px;
+    
 }
 
 h3 {
@@ -330,7 +419,22 @@ h3 {
     }
 }
 
+
+
+
+
 /* -------------------------section four-------------------- */
+
+
+
+
+
+.section4{
+  padding: 30px;
+  background-image: url("/home/developer/Desktop/dp/Design Task1/assets/images/images/coffee4.jpg");
+
+
+}
 h2 {
     text-align: center;
     font-size: 30px;
@@ -350,7 +454,7 @@ h2 {
     padding: 2px 16px;
 }
 
-.content {
+.content_4 {
     background-color: #c9ad85;
     padding: 15px;
 }
@@ -473,38 +577,108 @@ h2 {
             margin-bottom: 10px;
             padding: 17px;
         }
-
+        /* .card img {
+           
+            height: 27px !important;
+        } */
         .title1 p {
             float: right;
             color: #c9ad85;
-            margin-right: 45%;
+            margin-right: 42%;
             padding-top: 0px;
             font-size: 15px;
             padding-bottom: -16px;
             margin-bottom: -16px;
             margin-top: 0px;
         }
+        .col-sm-6 
+        {
+            padding-bottom: 15px!important;
+        }
 
         .title p {
             float: right;
             color: #c9ad85;
-            margin-right: 53%;
+            margin-right: 50%;
             padding-top: -17px;
             font-size: 15px;
+        }
+        .col-sm-4{
+            padding: 20px;
         }
     }
 
 
 
+/* --------section 5------------ */
+.section5{
+    padding: 40px;
+    background-color: #f2f2f2;
+}
+.inner_card{
+    width: 75%;
+    text-align: inherit;
+}
+.title5 p{
+    text-align: center;
+    font-size: 35px;
+    color: #c9ad85;
+}
+.sub_title5 p
+{
+    text-align: center;
+    font-size: 15px;
+}
+.col-sm-4 .card card-first{
+    background-color: aliceblue;
+}
+.address p{
+    font-size: 15px;
+    color: #c9ad85;
+}
+
+.call p{
+    font-size: 15px;
+    color: #c9ad85;
+}
+.email p{
+    font-size: 15px;
+    color: #c9ad85;
+}
+.card_text{
+    padding-left: 15px;
+    width: fit-content;
+}
+.send {
+    color:#c9ad85;
+}
+.send_button{
+    color:#c9ad85;
+}
 
 
+/* -------------SECTION6------------ */
 
+.section6{
+    padding: 30px;
+    background-color: #4d4b4a;
 
-
-
-
-
-
+}
+.bottom li{
+    list-style-type: none;
+    float: left;
+    width: 16%;
+    position: relative;
+    text-align: center;
+    color:#c9ad85;
+    font-size: 20px;
+}
+.footer p{
+    color: #c9ad85;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+}
 
 
 
