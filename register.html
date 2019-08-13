@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Signup / Registration form using Material Design - Demo by W3lessons</title>
+  <!-- CORE CSS-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
+  <style type="text/css">
+    html,
+    body {
+      height: 100%;
+    }
+
+    html {
+      display: table;
+      margin: auto;
+    }
+
+    body {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .margin {
+      margin: 0 !important;
+    }
+  </style>
+
+</head>
+
+<body class="blue">
+
+
+  <div id="login-page" class="row">
+    <div class="col s12 z-depth-6 card-panel">
+      <form class="login-form">
+        <div class="row">
+          <div class="input-field col s12 center">
+            <img src="http://w3lessons.info/logo.png" alt="" class="responsive-img valign profile-image-login">
+            <p class="center login-form-text">W3lessons - Material Design SignUp Form</p>
+          </div>
+        </div>
+        <div class="text" style="background-color: blue">
+          <p id="demo" style="font-family: Arial, Helvetica, sans-serif"></p>
+        </div>
+        <div>
+          <p id="demo"></p>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-social-person-outline prefix"></i>
+            <input id="username" type="text" class="validate" required="true">
+            Usernames
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-communication-email prefix"></i>
+            <input id="email" type="email" class="validate" required="true">
+            Email<p id="mail"></p>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input id="password" type="password" class="validate" required="true">
+            Password
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <input id="password-again" type="password" required="true">
+            Re-type password <p id="password1"></p>s
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <button onclick="register()" class="btn waves-effect waves-light col s12">Register
+              Now</button>
+          </div>
+          <div class="input-field col s12">
+            <p class="margin center medium-small sign-up">Already have an account? <a href='login'>Login</a></p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="/js/register.js"></script>
+
+
+</body>
+
+</html>

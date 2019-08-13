@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="Update()">
+
+    <div class="container">
+        <h1 style="text-align: center">Product Table</h1>
+
+
+        product_name: <input type="text" id="pro_name"><br><br>
+        product_url: <input type="text" id="pro_url"><br><br>
+
+        <div class="update" style="text-align: center">
+            <button onclick="update_product_value()" align="center">update</button>
+        </div><br>
+
+    </div>
+    <script src="/js/product.js"></script>
+
+</body>
+
+</html>
